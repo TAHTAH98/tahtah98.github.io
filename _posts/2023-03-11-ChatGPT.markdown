@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "ChatGPT, résultats, problèmes, principe et perspectives"
+date:   2023-03-11 19:55:40 +0100
+categories: jekyll update
+---
+# Résultats
+let's gooo
+# Problèmes
+
+# Principe
+
+# Perspectives

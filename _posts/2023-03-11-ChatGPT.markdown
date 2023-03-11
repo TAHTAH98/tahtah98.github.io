@@ -13,17 +13,26 @@ Nous retrouvons par exemple [cet utilisateur sur Reddit](https://www.reddit.com/
 
 # <span style="color:#3a5069">Programmation</span>
 ChatGPT peut aider dans la programmation en générant du code soit pour compléter du code existant, soit pour créer de nouvelles fonctions, soit pour tester d'autres fonctions etc. Il peut aussi être utilisé pour débugger et corriger la syntaxe ou encore aider avec des commandes Linux et Git. On retrouve par exemple [cette créatrice de contenu](https://www.youtube.com/watch?v=VznoKyh6AXs&t=1s) qui nous apprend comment apprendre la programmation rapidement en utilisant ChatGPT.
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/y.tahtah/Downloads/TAHTAH98.github.io/learn_with_chatgpt.png?version%3D1678573643125)
+![Alt text](../images/learn_with_chatgpt.png)
 
 
 # <span style="color:#3a5069">Corvées</span>
 ChatGPT peut aussi être utilisé pour nous aider dans nos tâches quotidiennes et certaines corvées comme l'écriture et la ré-écriture de mails, l'organisation de tâche dans un emploi du temps, l'organisation de plats et la suggestions de recettes à partir de ce qui est dans le réfrigérateur etc. On retrouve [l'extension ChatGPT Writer](https://chrome.google.com/webstore/detail/chatgpt-writer-write-mail/pdnenlnelpdomajfejgapbdpmjkfpjkp) sur Google Chrome qui permet d'écrire des mails rapidement et efficacement en utilisant ChatGPT.
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/y.tahtah/Downloads/TAHTAH98.github.io/chatgptwriter.png?version%3D1678573676677)
+![Alt text](../images/chatgptwriter.png)
 
 ## Problèmes
 Bien que ChatGPT soit d'apparence une révolution par rapport aux modèles de langages précédents, il reste un modèle de la famille des modèles GPT3 et ce qui fait son unicité est la manière dont il est entraîné [1]. Ceci implique aussi qu'il y a plusieurs types de problèmes, des problèmes liés au fait qu'il soit un algorithme de machine learning, et puis des problèmes liés au fait à comment il a été fine-tuné, donc à ce qui fait son unicité. Pour traider des problèmes autour de ChatGPT, nous distinguons les problèmes éthiques des problèmes qu'on qualifie de "techniques".
 
 # <span style="color:#3a5069">Éthiques</span>
+On trouve plusieurs problèmes éthiques dont :
+- Biais : ChatGPT étant un modèle de machine learning entraînés sur un immense volume de données tirés de l'internet, il est sensible aux biais qui se trouvent dans ces données et il les reproduit. Grâce aux actions d'OpenAI, on a remarqué que le modèle est de plus en plus insensibles aux biais et refuse de produire des réponses racistes, sexistes, violentes ou autres.
+- Usurpation : Les utilisateurs peuvent demander à ChatGPT d'écrire et de parler comme une autre personne, et c'est surtout les célébrités qui sont sujettes à ça puisque leur contenu est plus répandu dans les données sur lesquelles a été entraîné ChatGPT mais on peut facilement envisager un fine-tuning d'un modèle tel que ChatGPT sur des posts, des commentaires et autres d'une personne spécifique. Par exemple, [on peut demander à l'IA de Bing de se faire passer pour The Rock, Biden ou Trump](https://www.bleepingcomputer.com/news/microsoft/bing-chat-has-a-secret-celebrity-mode-to-impersonate-celebrities/)
+![Alt text](../images/trump_biden.png)
+- Harcélement : 
+- Désinformation : 
+- Malware : 
+
+# <span style="color:#3a5069">Techniques</span>
 
 ## Principe
 

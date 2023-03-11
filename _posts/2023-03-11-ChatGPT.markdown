@@ -4,7 +4,7 @@ title:  "ChatGPT, résultats, problèmes, principe et perspectives"
 date:   2023-03-11 19:55:40 +0100
 categories: jekyll update
 ---
-# <span style="color:#000000">Applications</span>
+### <span style="color:#000000">Applications</span>
 ChatGPT est utilisé dans une grande variété d'applications et à des fins différentes mais on peut tirer trois catégories bien apparentes d'utilisations de ChatGPT :
 ## <span style="color:#3a5069">Créativité</span>
 Le but ici est d'assister l'utilisateur dans des tâches créatives telles que la génération de texte dans un style particulier (imiter Shakespeare par exemple) ou d'utiliser un ton particulier (sarcastique par exemple). Il est aussi utilisé afin de donner des idées comme la suggestion de cadeaux d'anniversaire, la suggestion d'événements à organiser dans le cadre du travail etc.

@@ -13,15 +13,22 @@ Nous retrouvons par exemple [cet utilisateur sur Reddit](https://www.reddit.com/
 
 # <span style="color:#3a5069">Programmation</span>
 ChatGPT peut aider dans la programmation en générant du code soit pour compléter du code existant, soit pour créer de nouvelles fonctions, soit pour tester d'autres fonctions etc. Il peut aussi être utilisé pour débugger et corriger la syntaxe ou encore aider avec des commandes Linux et Git. On retrouve par exemple [cette créatrice de contenu](https://www.youtube.com/watch?v=VznoKyh6AXs&t=1s) qui nous apprend comment apprendre la programmation rapidement en utilisant ChatGPT.
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/var/folders/wd/11xbv7xd2xq62sfnl2gq82gr0000gp/T/TemporaryItems/NSIRD_screencaptureui_MVjFA8/Capture%20d%E2%80%99e%CC%81cran%202023-03-11%20a%CC%80%2023.16.47.png?version%3D1678573012930)
+![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/y.tahtah/Downloads/TAHTAH98.github.io/learn_with_chatgpt.png?version%3D1678573643125)
+
 
 # <span style="color:#3a5069">Corvées</span>
 ChatGPT peut aussi être utilisé pour nous aider dans nos tâches quotidiennes et certaines corvées comme l'écriture et la ré-écriture de mails, l'organisation de tâche dans un emploi du temps, l'organisation de plats et la suggestions de recettes à partir de ce qui est dans le réfrigérateur etc. On retrouve [l'extension ChatGPT Writer](https://chrome.google.com/webstore/detail/chatgpt-writer-write-mail/pdnenlnelpdomajfejgapbdpmjkfpjkp) sur Google Chrome qui permet d'écrire des mails rapidement et efficacement en utilisant ChatGPT.
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/var/folders/wd/11xbv7xd2xq62sfnl2gq82gr0000gp/T/TemporaryItems/NSIRD_screencaptureui_qjUBI4/Capture%20d%E2%80%99e%CC%81cran%202023-03-11%20a%CC%80%2023.19.36.png?version%3D1678573186730)
-
+![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/y.tahtah/Downloads/TAHTAH98.github.io/chatgptwriter.png?version%3D1678573676677)
 
 ## Problèmes
+Bien que ChatGPT soit d'apparence une révolution par rapport aux modèles de langages précédents, il reste un modèle de la famille des modèles GPT3 et ce qui fait son unicité est la manière dont il est entraîné [1]. Ceci implique aussi qu'il y a plusieurs types de problèmes, des problèmes liés au fait qu'il soit un algorithme de machine learning, et puis des problèmes liés au fait à comment il a été fine-tuné, donc à ce qui fait son unicité. Pour traider des problèmes autour de ChatGPT, nous distinguons les problèmes éthiques des problèmes qu'on qualifie de "techniques".
+
+# <span style="color:#3a5069">Éthiques</span>
 
 ## Principe
 
 ## Perspectives
+
+## Bibliographie
+
+[1] https://openai.com/blog/chatgpt

@@ -8,12 +8,16 @@ categories: jekyll update
 ChatGPT est utilisé dans une grande variété d'applications et à des fins différentes mais on peut tirer trois catégories bien apparentes d'utilisations de ChatGPT :
 # <span style="color:#3a5069">Créativité</span>
 Le but ici est d'assister l'utilisateur dans des tâches créatives telles que la génération de texte dans un style particulier (imiter Shakespeare par exemple) ou d'utiliser un ton particulier (sarcastique par exemple). Il est aussi utilisé afin de donner des idées comme la suggestion de cadeaux d'anniversaire, la suggestion d'événements à organiser dans le cadre du travail etc.
-
+Nous retrouvons par exemple [cet utilisateur sur Reddit](https://www.reddit.com/r/ChatGPT/comments/111qwos/beautiful_advice_for_to_how_cope_with_my_aging/) qui demande à ChatGPT ce qu'il peut faire pour faire face au fait que son chien devient âgé et pour surmonter la peur de sa mort.
 ![Alt text](https://i.redd.it/pojhvg5es3ia1.jpg)
 
-# <span style="color:#3a5069">Code</span>
+# <span style="color:#3a5069">Programmation</span>
+ChatGPT peut aider dans la programmation en générant du code soit pour compléter du code existant, soit pour créer de nouvelles fonctions, soit pour tester d'autres fonctions etc. Il peut aussi être utilisé pour débugger et corriger la syntaxe ou encore aider avec des commandes Linux et Git. On retrouve par exemple [cette créatrice de contenu](https://www.youtube.com/watch?v=VznoKyh6AXs&t=1s) qui nous apprend comment apprendre la programmation rapidement en utilisant ChatGPT.
+![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/var/folders/wd/11xbv7xd2xq62sfnl2gq82gr0000gp/T/TemporaryItems/NSIRD_screencaptureui_MVjFA8/Capture%20d%E2%80%99e%CC%81cran%202023-03-11%20a%CC%80%2023.16.47.png?version%3D1678573012930)
 
 # <span style="color:#3a5069">Corvées</span>
+ChatGPT peut aussi être utilisé pour nous aider dans nos tâches quotidiennes et certaines corvées comme l'écriture et la ré-écriture de mails, l'organisation de tâche dans un emploi du temps, l'organisation de plats et la suggestions de recettes à partir de ce qui est dans le réfrigérateur etc. On retrouve [l'extension ChatGPT Writer](https://chrome.google.com/webstore/detail/chatgpt-writer-write-mail/pdnenlnelpdomajfejgapbdpmjkfpjkp) sur Google Chrome qui permet d'écrire des mails rapidement et efficacement en utilisant ChatGPT.
+![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/var/folders/wd/11xbv7xd2xq62sfnl2gq82gr0000gp/T/TemporaryItems/NSIRD_screencaptureui_qjUBI4/Capture%20d%E2%80%99e%CC%81cran%202023-03-11%20a%CC%80%2023.19.36.png?version%3D1678573186730)
 
 
 ## Problèmes

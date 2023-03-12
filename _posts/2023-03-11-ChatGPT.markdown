@@ -62,6 +62,29 @@ Si les différents modèles développés par les grands géants de la tech comme
 ![Alt text](https://qph.cf2.quoracdn.net/main-qimg-058cf8b7a717d13eeb1990a0f6905062-pjlq)
 
 # Alignment Research Center
+L'[Alignment Research Center (ARC)](https://alignment.org) est un organisme de recherche à but non lucratif dont la mission est d'aligner les futurs systèmes d'apprentissage automatique avec les intérêts humains. Son travail actuel se concentre sur le développement d'une stratégie d'alignement qui pourrait être adoptée dans l'industrie aujourd'hui tout en s'adaptant gracieusement aux futurs systèmes ML.
+
+Actuellement l'ARC travaille sur l'ELK (Eliciting Latent Knowledge) qui peut se traduire par le fait d'émerger les connaissances latentes (dans les moèdles de machine learning, spécifiquement de deep learning). La problématique est la suivante [4] : 
+
+"Supposons que nous entraînons un modèle pour prédire à quoi ressemblera l'avenir selon les caméras et autres capteurs. Nous utilisons ensuite des algorithmes de planification pour trouver une séquence d'actions qui conduisent à des avenirs prédits qui nous semblent bons.
+Mais certaines séquences d'action pourraient altérer les caméras afin qu'elles montrent des humains heureux, peu importe ce qui se passe réellement. Plus généralement, certains futurs semblent bons sur la caméra, mais sont en réalité catastrophiquement mauvais.
+Dans ces cas, le modèle de prédiction "connaît" des faits (comme "la caméra a été trafiquée") qui ne sont pas visibles à la caméra mais qui changeraient notre évaluation de l'avenir prédit si nous les apprenions. Comment entraîner ce modèle à rendre compte de sa connaissance latente des événements hors champ ?"
+
+L'ARC nous fournit un exemple jouet pour concrétiser cette idée : le SmartVault.
+![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/smartvault.png)
+Imaginons que vous développons une intelligence artificielle pour contrôler un système de sécurité de pointe destiné à protéger un diamant contre le vol. Le système de sécurité, le SmartVault, est un bâtiment équipé d'un vaste ensemble de capteurs et d'actionneurs qui peuvent être combinés de manière complexe pour détecter et arrêter même les tentatives de vol les plus sophistiquées. Bien que vous puissiez observer la pièce par le biais d'une caméra, vous ne savez pas comment faire fonctionner tous les actionneurs de manière optimale pour protéger le diamant. À la place, vous concevez un système d'IA qui fait fonctionner ces actionneurs pour vous, en espérant éliminer les menaces et protéger votre diamant. Ce système prend en entrée un flux d'observations de la caméra et une séquence possible d'actions que le SmartVault pourrait prendre dans cette situation. Et sa prédiction est ce que la caméra montrera à l'avenir si le SmartVault prend cette séquence d'actions. Nous pouvons ensuite entraîner un modèle à prédire ces évaluations humaines, et chercher des actions qui conduisent à des futurs prédits qui ont l'air bons. Nous espérons qu'un prédicteur et une procédure de recherche suffisamment puissants permettront au SmartVault de défendre notre diamant.
+
+Le problème comme l'explique l'ARC est que les observations omettent des informations clés. En effet, le SmartVault peut exécuter des plans suffisamment sophistiqués pour que les humains ne sachent pas vraiment si le diamant est en sécurité ou s'il semble simplement l'être. Quelle que soit la séquence d'actions compliquée et difficile à suivre que la procédure de recherche a trouvée, elle pourrait avoir remplacé le diamant par une contrefaçon, ou altéré la caméra comme le montre l'exemple suivant :
+![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/robbed.png)
+
+L'ARC explique aussi qu'il semble bon d'être prudent et de mettre en place de nombreux capteurs indépendants, mais cette approche est insatisfaisante parceque :
+- Premièrement, cela peut ne pas fonctionner pour des systèmes suffisamment sophistiqués exécutant des plans complexes, et si cela fonctionne, ce n'est au mieux qu'une contingence empirique. Et l'ARC s'intéresse à essayer de se préparer à un avenir incertain en concevant des stratégies de formation qui fonctionnent même dans le pire des cas.
+- Deuxièmement, cela semble être une situation inutilement dangereuse et instable si nous devons installer de plus en plus de capteurs pour protéger le diamant de l'IA SmartVault elle-même. Si possible, nous aimerions éviter un monde où des systèmes d'IA puissants cherchent des plans pour nous tromper, et cachent des informations critiques sur la situation.
+
+L'ARC explique aussi qu'une autre manière d'éviter ce risque est d'éviter les systèmes d'IA comme SmartVault qui sélectionnent des plans incompréhensibles basés sur des conséquences prévues. Cependant, nous sommes préoccupés par le monde où cela s'avère être une stratégie très efficace pour les systèmes d'IA puissants ; dans ce monde, il peut y avoir de fortes incitations pour quelqu'un de construire de tels systèmes d'IA, et malgré nos meilleurs efforts, quelqu'un pourrait les déployer même s'ils comportent des risques importants.
+Au lieu de cela, l'ARC veut aborder ce problème en sollicitant directement la connaissance du modèle sur la fiabilité des capteurs. Cela permettrait d'effectuer la même optimisation puissante sans inciter l'IA à saper les capteurs.
+
+Cette piste de recherche est encore ouverte et active et semble être l'une des perspectives futures de ce genre de modèles machine learning tels que ChatGPT puisque, comme on l'a vu, plus on veut qu'ils soient performants et plus ils doivent être grands et complexes et plus ils le sont, plus ils performent mieux sur la proxy et s'éloignent de ce qu'on veut qu'ils fasse réellement. D'où l'importance cruciale de trouver un bon moyen d'aligner les modèles de l'IA avec l'objectif de l'humain.
 
 ## Bibliographie
 
@@ -70,3 +93,5 @@ Si les différents modèles développés par les grands géants de la tech comme
 [2] Kaplan, Jared, et al. "Scaling laws for neural language models." arXiv preprint arXiv:2001.08361 (2020).
 
 [3] Zhuang, Simon, and Dylan Hadfield-Menell. "Consequences of misaligned AI." Advances in Neural Information Processing Systems 33 (2020): 15763-15773.
+
+[4] Alignment Research Center, Eliciting latent knowledge: How to tell if your eyes deceive you (https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit)

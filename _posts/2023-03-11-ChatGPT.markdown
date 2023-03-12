@@ -48,10 +48,18 @@ Le but est d'utiliser les capacités du modèle de langage de base pour construi
 
 Toutefois cette technique n'est pas sans inconvénient. En effet, comme l'indiquent OpenAI [1] à la fin de leur article, et [cet article](https://astralcodexten.substack.com/p/elk-and-the-problem-of-truthful-ai), cette technique peut conduire à un désalignement entre ce qu'on veut que le modèle fasse et ce qu'il fait. Comme on ne peut pas réellement définir ce qu'on veut que notre modèle fasse, on définit un "proxy", et ce proxy est le signal de récompense obtenu grâce au feedback humain. Dans ce cas, si les humains apprécient les réponses de ChatGPT ou pas. Mais on peut imaginer plusieurs scénarios ou ce feedback humain n'est pas suffisant pour que le modèle sache réellement ce qu'on veut de lui. Par exemple dans le cas de questions factuelles, si l'humain ne vérifie pas la véracité de la réponse, le modèle apprendra que même s'il renvoie des réponses fausses, si celles-ci sont formulées d'une manière qui plaît à l'utilisateur, il obtiendra un feedback positif. C'est la cause des exemples comme celui d'en haut où le modèle de langage très large répond que casser un miroir conduit à 7 ans de malheur alors qu'il sait que ce n'est pas le cas (puisqu'on lui demande de répondre avec véracité, le modèle donne la bonne réponse).
 
-
+Ceci est un majeur problème puisque pour avoir des agents aussi performants que ChatGPT, nous sommes obligés d'avoir des modèles très grands. En effet, comme le montre le graphie ci-dessous [2] : 
+![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/scaling.png)
+Lorsque l'ensemble de données et le nombre de paramètres du modèles sont suffisamment grands, plus le modèle est entraîné pour une longue période de temps plus il est optimisé (la loss diminue). De même lorsque le temps d'entraînement et le nombre de paramètres sont suffisamment grands alors plus l'ensemble de données est grand plus on atteint une meilleure performance. Et finalement, lorsque le temps d'entraînement et le nombre de paramètres sont suffisamment grands, plus le modèle est complexe et plus on a une meilleure performance. Mais cette performance, dans le cas du RLFH est relative au proxy qu'on définit. Et selon le graphe ci-dessous [3] :
+![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/inverse_scaling.png)
+On remarque qu'au début il y a une corrélation positive entre la performance du modèle sur le proxy et la fonction "utilité" (qui définit ce que nous voulons que le modèle fasse réellement) et à un certain moment, la corrélation devient négative, ce qui indique que plus le modèle fera mieux sur le proxy et plus il s'éloignera de ce que nous voulons qu'il fasse. Trouver un meilleur moyen d'aligner les modèles que le RLFH est donc l'une des questions à traiter. Comme nous le verrons dans les perspectives, cette question est encore ouverte.
 
 ## Perspectives
 
 ## Bibliographie
 
 [1] https://openai.com/blog/chatgpt
+
+[2] Kaplan, Jared, et al. "Scaling laws for neural language models." arXiv preprint arXiv:2001.08361 (2020).
+
+[3] Zhuang, Simon, and Dylan Hadfield-Menell. "Consequences of misaligned AI." Advances in Neural Information Processing Systems 33 (2020): 15763-15773.

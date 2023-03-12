@@ -55,6 +55,13 @@ Lorsque l'ensemble de données et le nombre de paramètres du modèles sont suff
 On remarque qu'au début il y a une corrélation positive entre la performance du modèle sur le proxy et la fonction "utilité" (qui définit ce que nous voulons que le modèle fasse réellement) et à un certain moment, la corrélation devient négative, ce qui indique que plus le modèle fera mieux sur le proxy et plus il s'éloignera de ce que nous voulons qu'il fasse. Trouver un meilleur moyen d'aligner les modèles que le RLFH est donc l'une des questions à traiter. Comme nous le verrons dans les perspectives, cette question est encore ouverte.
 
 ## Perspectives
+Nous pouvons distinguer deux catégories de perspectives en ce qui concerne ChatGPT: les autres modèles développés à la suite de ChatGPT que ce soit par les concurrents ou une version améliorée de ChatGPT. Et les tentatives d'amélioration de l'alignement des modèles de machine learning.
+
+# Autres modèles
+Si les différents modèles développés par les grands géants de la tech comme Bard (par Google), l'IA de Bing qui repose sur des modèles d'OpenAI ou encore LLaMa (par Meta) sont des langages de modèles avec des capacités d'agent conversationnel, Quora a sorti son produit IA appelé Poe. Poe permet aux utilisateurs de poser des questions et d'avoir des conversations avec plusieurs agents conversationnels. L'idée est d'avoir un produit qui permet le partage rapide et efficace des connaissances (ce qui est le but de Quora). C'est pour cela que Poe, au lieu d'être un agent conversationnel entraîné sur un très grand corpus de texte, c'est plus un produit, une plateforme qui s'appuie sur l'IA pour communiquer avec l'utilisateur et le relier avec d'autres modèles (pour l'instant les seuls modèles disponibles sont ceux d'OpenAI et Anthropic)
+![Alt text](https://qph.cf2.quoracdn.net/main-qimg-058cf8b7a717d13eeb1990a0f6905062-pjlq)
+
+# Alignment Research Center
 
 ## Bibliographie
 

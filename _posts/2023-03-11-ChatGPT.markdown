@@ -56,11 +56,25 @@ On remarque qu'au début il y a une corrélation positive entre la performance d
 
 Si cette partie traite le RLFH, qui est une technique de fine-tuning d'un modèle de langage de base qui est pré-entraîné, il faut aussi comprendre comment sont construits les modèles de langage. Comprenons d'abord comment ont évolué les modèles de langage puis comprenons l'état de l'art actuel.
 
-# Modèles de langage : Evolution
+# <span style="color:#3a5069">CBOW [4], 2013</span>
 
-### CBOW 
+# <span style="color:#3a5069">ELMo</span>
 
-# Modèles de langage : Etat de l'art
+# <span style="color:#3a5069">GPT</span>
+
+# <span style="color:#3a5069">BERT</span>
+
+# <span style="color:#3a5069">T5</span>
+
+# <span style="color:#3a5069">GPT2</span>
+
+# <span style="color:#3a5069">GPT3</span>
+
+# <span style="color:#3a5069">InstructGPT</span>
+
+# <span style="color:#3a5069">ChatGPT</span>
+
+# <span style="color:#3a5069">GPT4</span>
 
 ## Perspectives
 Nous pouvons distinguer deux catégories de perspectives en ce qui concerne ChatGPT: les autres modèles développés à la suite de ChatGPT que ce soit par les concurrents ou une version améliorée de ChatGPT. Et les tentatives d'amélioration de l'alignement des modèles de machine learning.
@@ -72,7 +86,7 @@ Si les différents modèles développés par les grands géants de la tech comme
 # Alignment Research Center
 L'[Alignment Research Center (ARC)](https://alignment.org) est un organisme de recherche à but non lucratif dont la mission est d'aligner les futurs systèmes d'apprentissage automatique avec les intérêts humains. Son travail actuel se concentre sur le développement d'une stratégie d'alignement qui pourrait être adoptée dans l'industrie aujourd'hui tout en s'adaptant gracieusement aux futurs systèmes ML.
 
-Actuellement l'ARC travaille sur l'ELK (Eliciting Latent Knowledge) qui peut se traduire par le fait d'émerger les connaissances latentes (dans les moèdles de machine learning, spécifiquement de deep learning). La problématique est la suivante [4] : 
+Actuellement l'ARC travaille sur l'ELK (Eliciting Latent Knowledge) qui peut se traduire par le fait d'émerger les connaissances latentes (dans les moèdles de machine learning, spécifiquement de deep learning). La problématique est la suivante [**] : 
 
 "Supposons que nous entraînons un modèle pour prédire à quoi ressemblera l'avenir selon les caméras et autres capteurs. Nous utilisons ensuite des algorithmes de planification pour trouver une séquence d'actions qui conduisent à des avenirs prédits qui nous semblent bons.
 Mais certaines séquences d'action pourraient altérer les caméras afin qu'elles montrent des humains heureux, peu importe ce qui se passe réellement. Plus généralement, certains futurs semblent bons sur la caméra, mais sont en réalité catastrophiquement mauvais.
@@ -102,4 +116,6 @@ Cette piste de recherche est encore ouverte et active et semble être l'une des 
 
 [3] Zhuang, Simon, and Dylan Hadfield-Menell. "Consequences of misaligned AI." Advances in Neural Information Processing Systems 33 (2020): 15763-15773.
 
-[4] Alignment Research Center, Eliciting latent knowledge: How to tell if your eyes deceive you (https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit)
+[4] Mikolov, Tomas, et al. "Efficient estimation of word representations in vector space." arXiv preprint arXiv:1301.3781 (2013).
+
+[**] Alignment Research Center, Eliciting latent knowledge: How to tell if your eyes deceive you (https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit)

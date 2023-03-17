@@ -54,6 +54,14 @@ Lorsque l'ensemble de données et le nombre de paramètres du modèles sont suff
 ![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/inverse_scaling.png)
 On remarque qu'au début il y a une corrélation positive entre la performance du modèle sur le proxy et la fonction "utilité" (qui définit ce que nous voulons que le modèle fasse réellement) et à un certain moment, la corrélation devient négative, ce qui indique que plus le modèle fera mieux sur le proxy et plus il s'éloignera de ce que nous voulons qu'il fasse. Trouver un meilleur moyen d'aligner les modèles que le RLFH est donc l'une des questions à traiter. Comme nous le verrons dans les perspectives, cette question est encore ouverte.
 
+Si cette partie traite le RLFH, qui est une technique de fine-tuning d'un modèle de langage de base qui est pré-entraîné, il faut aussi comprendre comment sont construits les modèles de langage. Comprenons d'abord comment ont évolué les modèles de langage puis comprenons l'état de l'art actuel.
+
+# Modèles de langage : Evolution
+
+### CBOW 
+
+# Modèles de langage : Etat de l'art
+
 ## Perspectives
 Nous pouvons distinguer deux catégories de perspectives en ce qui concerne ChatGPT: les autres modèles développés à la suite de ChatGPT que ce soit par les concurrents ou une version améliorée de ChatGPT. Et les tentatives d'amélioration de l'alignement des modèles de machine learning.
 

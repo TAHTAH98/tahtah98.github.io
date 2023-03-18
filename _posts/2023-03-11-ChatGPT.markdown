@@ -58,6 +58,16 @@ Si cette partie traite le RLFH, qui est une technique de fine-tuning d'un modèl
 
 # <span style="color:#3a5069">CBOW [4], 2013</span>
 
+Cet article introduit deux nouvelles architectures pour calculer des représentations **continues** de mots à partir d'un large corpus de texte. La qualité de ces représentations est mesurée grâce à une tâche de similarité syntactique et de similarité sémantique.
+
+Les auteurs essaient de maximiser l'accuracy avec un test qui mesure la régularité syntactiquet et sémantique sur l'ensemble test tout en minimisant la complexité d'entraînement qu'ils définissent comme $O = E \times T \times Q$ avec $E$ le nombre d'epochs d'entraînement, $T$ le nombre de mots présents dans le corups et $Q$ dépend de l'architecture du réseau de neurones utilisé.
+
+En analysant les travaux de recherche précédents à celui-ci, les auteurs ont trouvé que la majorité de la complexité provenait des non-linéarités. Et ils affirment que même si les non-linarités dans les réseaux de neurones font leur particularité, en les omettant et en se reposant sur un autre travail de recherche où il est indiqué que les modèles de langage à base de réseaux de neurones peuvent être entraînés avec succès en deux étapes, l'apprentissage de représentations continues pour les mots et le modèle N-gram à base de réseau de neurones entraînés à partir de ces représentations, on gagnerait en efficacité et en temps.
+
+Pour cela leur première architecture (rappelons que l'entraînement se fera en deux étapes) pour apprendre une représentation continue pour les mots ne contient pas de non-linéarité. Le modèle a pour but de prédire un mot à partir de son contexte, c'est à dire à partir de mots dans une fenêtre fixe autour de celui-ci. Les auteurs ont trouvé que la meilleure taille pour cette fenêtre avec un classifieur log-linéaire est de $8$, c'est à dire $4$ mots avant et $4$ mots après. L'architecture contient ainsi trois couches en comptant la couche d'entrée. Chaque mot est associé à un vecteur de dimension $D$, et si on note la taille de la fenêtre $N$, alors en entrée nous obtenons $N$ vecteurs de taille $D$ qui sont sommées et la somme est multipliée par $1/N$. Ce vecteur est envoyé à une couche softmax hiérarchique. La complexité est ainsi $Q = N*D + D*log_{2}(V)$.
+
+![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/scaling.png)
+
 # <span style="color:#3a5069">ELMo</span>
 
 # <span style="color:#3a5069">GPT</span>

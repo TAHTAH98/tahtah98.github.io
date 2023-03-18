@@ -72,6 +72,8 @@ La deuxième architecture (Skip-gram) a pour but de faire le processus inverse. 
 
 ![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/skip-gram.png)
 
+Cette approche est toutefois limitée puisque la taille du contexte doit être contrôlée (surtout si on veut inclure la ponctuation) et parce que cette approche ne tient pas en compte de la position des mots les uns par rapport aux autres. Pour cela, la prochaine approche utilise des LSTMs, qui sont des réseaux de neurones récurrents qui gardent en mémoire l'information passée depuis le début (et depuis la fin si les LSTMs sont bidirectionnels) de la phrase.
+
 # <span style="color:#3a5069">ELMo</span>
 
 # <span style="color:#3a5069">GPT</span>

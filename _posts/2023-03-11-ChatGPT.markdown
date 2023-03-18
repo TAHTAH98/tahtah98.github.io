@@ -66,7 +66,11 @@ En analysant les travaux de recherche précédents à celui-ci, les auteurs ont 
 
 Pour cela leur première architecture (rappelons que l'entraînement se fera en deux étapes) pour apprendre une représentation continue pour les mots ne contient pas de non-linéarité. Le modèle a pour but de prédire un mot à partir de son contexte, c'est à dire à partir de mots dans une fenêtre fixe autour de celui-ci. Les auteurs ont trouvé que la meilleure taille pour cette fenêtre avec un classifieur log-linéaire est de $8$, c'est à dire $4$ mots avant et $4$ mots après. L'architecture contient ainsi trois couches en comptant la couche d'entrée. Chaque mot est associé à un vecteur de dimension $D$, et si on note la taille de la fenêtre $N$, alors en entrée nous obtenons $N$ vecteurs de taille $D$ qui sont sommées et la somme est multipliée par $1/N$. Ce vecteur est envoyé à une couche softmax hiérarchique. La complexité est ainsi $Q = N*D + D*log_{2}(V)$.
 
-![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/scaling.png)
+![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/cbow.png)
+
+La deuxième architecture (Skip-gram) a pour but de faire le processus inverse. A partir d'un mot, on souhaite maximiser la classification d'un mot à partir d'un autre mot dans la même phrase. Le modèle prend en entrée le vecteur contexte de taille $D$ et le projette pour récupérer une matrice de taille $(2*R, D)$ qui correspond à $2*R$ vecteurs de taille $D$. $R$ est tiré selon une certaine loi dans un intervalle $[1, C]$ où $C$ est la distance maximale à partir de laquelle on considère qu'on est hors du contexte du mot en entrée. On utilise ce nombre $R$ au lieu de $C$ directement puisqu'il a été trouvé qu'augmenter $C$ augmente la qualité des représentations vectorielles mais les mots très loin ont moins d'influence (selon les auteurs) que les mots proches, et $R$ est aussi utilisé pour réduire la complexité. Cette matrice de taille $(2*R, D)$ est alors envoyée vers un classifieur log-linéaire pour en déduire les $2*R$ vecteurs de taille $V$ qui indiquent les mots dans le contexte. La complexité est alors $O(C*(D + D*log_{2}(V)))$.
+
+![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/skip-gram.png)
 
 # <span style="color:#3a5069">ELMo</span>
 

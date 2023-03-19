@@ -60,7 +60,7 @@ Si cette partie traite le RLFH, qui est une technique de fine-tuning d'un modèl
 
 Cet article introduit deux nouvelles architectures pour calculer des représentations **continues** de mots à partir d'un large corpus de texte. La qualité de ces représentations est mesurée grâce à une tâche de similarité syntactique et de similarité sémantique.
 
-Les auteurs essaient de maximiser l'accuracy avec un test qui mesure la régularité syntactiquet et sémantique sur l'ensemble test tout en minimisant la complexité d'entraînement qu'ils définissent comme $O = E \times T \times Q$ avec $E$ le nombre d'epochs d'entraînement, $T$ le nombre de mots présents dans le corups et $Q$ dépend de l'architecture du réseau de neurones utilisé.
+Les auteurs essaient de maximiser l'accuracy avec un test qui mesure la régularité syntactiquet et sémantique sur l'ensemble test tout en minimisant la complexité d'entraînement qu'ils définissent comme $$O = E \times T \times Q$$ avec $E$ le nombre d'epochs d'entraînement, $T$ le nombre de mots présents dans le corups et $Q$ dépend de l'architecture du réseau de neurones utilisé.
 
 En analysant les travaux de recherche précédents à celui-ci, les auteurs ont trouvé que la majorité de la complexité provenait des non-linéarités. Et ils affirment que même si les non-linarités dans les réseaux de neurones font leur particularité, en les omettant et en se reposant sur un autre travail de recherche où il est indiqué que les modèles de langage à base de réseaux de neurones peuvent être entraînés avec succès en deux étapes, l'apprentissage de représentations continues pour les mots et le modèle N-gram à base de réseau de neurones entraînés à partir de ces représentations, on gagnerait en efficacité et en temps.
 
@@ -76,7 +76,9 @@ Cette approche est toutefois limitée puisque la taille du contexte doit être c
 
 # <span style="color:#3a5069">ELMo [5]</span>
 
-Les représentations vectorielles continues obtenues grâce à l'approche ELMo modélisent, et les caractéristiques complexes des mots (sémantiques et syntactiques), et, contrairement au modèle précédent, la polysémie des mots. En plus de cela, ELMo est entraîné à partir de tokens qui représentent des caractères (et non des mots entiers ou autres) ce qui permet de représenter n'importe quel mot et d'éviter d'utiliser un token pour les mots inconnus (généralement noté \<UNK\>)
+Les représentations vectorielles continues obtenues grâce à l'approche ELMo modélisent, et les caractéristiques complexes des mots (sémantiques et syntactiques), et, contrairement au modèle précédent, la polysémie des mots. En plus de cela, ELMo est entraîné à partir de tokens qui représentent des caractères (et non des mots entiers ou autres) ce qui permet de représenter n'importe quel mot et d'éviter d'utiliser un token pour les mots inconnus (généralement noté \<UNK\>).
+
+L'approche ELMo ressemble à la précédente dans le sens où on prédit un mot central en utilisant le contexte avant et après, sauf qu'au lieu d'utiliser une fenêtre fixe, ELMo bénéficie de l'utilisation de LSTMs pour prendre en compte tout le contenu. En effet, en utilisant des LSTMs bidirectionnels, toute la séquence avant et toute la séquence après le mot central peut-être représenté dans les états internes des LSTMs. C'est ainsi que nous pouvons extraire une représentation du mot qui non seulement prend en compte tout le contexte mais en dépend aussi. 
 
 # <span style="color:#3a5069">GPT</span>
 

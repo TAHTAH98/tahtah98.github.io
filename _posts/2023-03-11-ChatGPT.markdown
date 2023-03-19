@@ -72,9 +72,11 @@ La deuxième architecture (Skip-gram) a pour but de faire le processus inverse. 
 
 ![Alt text](https://raw.githubusercontent.com/TAHTAH98/tahtah98.github.io/main/images/skip-gram.png)
 
-Cette approche est toutefois limitée puisque la taille du contexte doit être contrôlée (surtout si on veut inclure la ponctuation) et parce que cette approche ne tient pas en compte de la position des mots les uns par rapport aux autres. Pour cela, la prochaine approche utilise des LSTMs, qui sont des réseaux de neurones récurrents qui gardent en mémoire l'information passée depuis le début (et depuis la fin si les LSTMs sont bidirectionnels) de la phrase.
+Cette approche est toutefois limitée puisque la taille du contexte doit être contrôlée (surtout si on veut inclure la ponctuation) et parce que cette approche ne tient pas en compte de la position des mots les uns par rapport aux autres. Et finalement, bien que cette approche produit des représentations vectorielles pour les mots dont on peut extraire une sémantique plus ou moins bonne, cette sémantique est fixe. Nous n'avons pas de polysémie. Pour cela, la prochaine approche utilise des LSTMs, qui sont des réseaux de neurones récurrents qui gardent en mémoire l'information passée depuis le début (et depuis la fin si les LSTMs sont bidirectionnels) de la phrase et qui vont permettre de produire des représentations vectorielles de meilleure qualité.
 
-# <span style="color:#3a5069">ELMo</span>
+# <span style="color:#3a5069">ELMo [5]</span>
+
+Les représentations vectorielles continues obtenues grâce à l'approche ELMo modélisent, et les caractéristiques complexes des mots (sémantiques et syntactiques), et, contrairement au modèle précédent, la polysémie des mots. En plus de cela, ELMo est entraîné à partir de tokens qui représentent des caractères (et non des mots entiers ou autres) ce qui permet de représenter n'importe quel mot et d'éviter d'utiliser un token pour les mots inconnus (généralement noté \<UNK\>)
 
 # <span style="color:#3a5069">GPT</span>
 
@@ -133,5 +135,7 @@ Cette piste de recherche est encore ouverte et active et semble être l'une des 
 [3] Zhuang, Simon, and Dylan Hadfield-Menell. "Consequences of misaligned AI." Advances in Neural Information Processing Systems 33 (2020): 15763-15773.
 
 [4] Mikolov, Tomas, et al. "Efficient estimation of word representations in vector space." arXiv preprint arXiv:1301.3781 (2013).
+
+[5] Sarzynska-Wawer, Justyna, et al. "Detecting formal thought disorder by deep contextualized word representations." Psychiatry Research 304 (2021): 114135.
 
 [**] Alignment Research Center, Eliciting latent knowledge: How to tell if your eyes deceive you (https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit)
